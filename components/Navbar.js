@@ -3,6 +3,8 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Logo from "../assets/cvnavbar.svg";
 import NavItem from "./NavItem";
+import { useRouter } from "next/router";
+import { Router } from "react-router-dom";
 
 const MENU_LIST = [
   //   { text: "Home", href: "/" },
@@ -10,11 +12,17 @@ const MENU_LIST = [
   { text: "Accessories", href: "/accessories" },
   { text: "Account", href: "/account" },
   { text: "Register", href: "/register" },
-  { text: "Login", href: "/login"}
+  { text: "Login",  href: "/users/1"}
 ];
 const Navbar = () => {
   const [navActive, setNavActive] = useState(null);
   const [activeIdx, setActiveIdx] = useState(-1);
+  const router = useRouter();
+
+  const handleClick = () => {
+    console.log('taking you to login')
+    router.push('/login');
+  }
 
   return (
     <header>
