@@ -5,15 +5,17 @@ import { Container } from "rsuite";
 // import Register from './features/register/Register';
 import { store } from "../store";
 import { Provider, useSelector } from "react-redux";
-import { selectUser} from "../slices/userSlice";
+import { selectUser } from "../slices/userSlice";
+
 
 
 function MyApp({ Component, pageProps}) {
 
-  
+// const user = useSelector(selectUser)
 
   return (
       <Provider store={store}>
+        
       <Component {...pageProps} />
     </Provider>
   );

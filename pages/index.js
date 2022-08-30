@@ -3,6 +3,8 @@ import Image from 'next/image'
 import TopBar from '../components/TopBar';
 // import styles from '../styles/Home.module.css'
 import Navbar from "../components/Navbar";
+import LoginOne from './users/[id]';
+import Vapes from '../components/Vapes';
 
 
 export default function Home() {
@@ -14,6 +16,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
         <Navbar />
+        {/* <Vapes/> */}
+        {/* <LoginOne/> */}
         </div>
   )
 }

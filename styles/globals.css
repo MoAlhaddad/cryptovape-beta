@@ -141,3 +141,71 @@ nav{
   border-radius: 3px;
   
 }
+
+
+.image-wrapper {
+  box-sizing: content-box;
+}
+  /* the magic happens here */
+  .image-wrapper > div {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    font-family: "Nunito";
+    font-style: Black;
+    font-size: 80px;
+    line-height: 109px;
+    line-height: 100%;
+    align-items: left;
+    vertical-align: Center;
+  }
+
+  .vape-product{
+    position: absolute;
+    width: 182px;
+    height: 53px;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 27px;
+    bottom: 0px;
+    align-content: center;
+  }
+
+  .rectangle{
+    position: absolute;
+    width: 353px;
+    height: 425px;
+    /* top: -48px; */
+    left: 42px;
+    background: #EEE6E6;
+    border-radius: 20px;
+  }
+
+  .rectangle > .vape-rect{
+    box-sizing: border-box;
+    width: 300px;
+    height: 225px;
+    background-image: url("../assets/vapes.png");
+    border: 1px solid #000000;
+    border-radius: 30px;
+    margin: auto;
+    display: flex;
+  }
+
+  .rectangle > .crypto-rect{
+    position: absolute;
+    width: 40px;
+    height: 37.86px;
+    margin-left: 20px;
+    background: url("../assets//bluemoney.png");
+    
+  }
+
+  .crypto-text{
+    font-family: "Nunito";
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 21.82px;
+    margin-left: 60px;
+  }

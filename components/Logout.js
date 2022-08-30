@@ -13,7 +13,7 @@ const Logout = () => {
     return (
         <div>
             <h1>
-            Welcome <span className="user__name">{user.name}</span>
+            Welcome <span className="user__name">{user}</span>
             </h1>{" "}
             <button className="logout__button" onClick={(e) => handleLogout(e)}>Logout</button>
             </div>

@@ -6,12 +6,12 @@ const rootReducer = combineReducers({
     user: userSlice.reducer,
 })
 
-export const store = configureStore({
-    reducer: rootReducer,
-    middleware: getDefaultMiddleware({
-        serializableCheck: {
-            ignoredActions: [],
-            ignoredPaths: [],
-        }
-    })
-})
+// export const store = configureStore({
+//     reducer: rootReducer,
+//     middleware: getDefaultMiddleware({
+//         serializableCheck: {
+//             ignoredActions: [],
+//             ignoredPaths: [],
+//         }
+//     })
+// })
